@@ -2,7 +2,7 @@
 @import "style.css";
 @import "../content/header/header.css";
 @import "../content/header/burger.css";
-@import "../content/main/__description/main__description.css";
+@import "../content/main/main__description.css";
 @import "../content/main/__order/main__order.css";
 @import "../content/main/__order/_select/select.css";
 @import "../content/main/__order/_range/range.css";
