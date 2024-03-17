@@ -1,4 +1,4 @@
-fetch('content/main/__slider/main__slider.html')
+fetch('content/slider/slider.html')
     .then(response => response.text())
     .then(html => {
         document.getElementById('feedbackBlock').innerHTML = html

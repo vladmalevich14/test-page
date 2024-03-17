@@ -2,7 +2,7 @@ fetch('content/header/header.html')
     .then(response => response.text())
     .then(html => document.getElementById('header').innerHTML = html);
 
-fetch('content/main/main__description.html')
+fetch('content/description/description.html')
     .then(response => response.text())
     .then(html => document.getElementById('about').innerHTML = html);
 

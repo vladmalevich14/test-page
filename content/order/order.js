@@ -1,8 +1,8 @@
-fetch('content/main/__order/main__order.html')
+fetch('content/order/order.html')
     .then(response => response.text())
     .then(html => {
         document.getElementById('orderBlock').innerHTML = html
-        main__order()
+        order()
         emailValidate()
         setOptions()
         getRangeValue()
@@ -10,7 +10,7 @@ fetch('content/main/__order/main__order.html')
         submitForm()
     });
 
-function main__order() {
+function order() {
     let dataSteps = [
         {img: 'assets/icons/svg/loop.svg', title: 'Lorem ipsum dolorsit amet', alt: 'loop icon'},
         {img: 'assets/icons/svg/percent.svg', title: 'Сonsecte turadipiscing elit', alt: 'percent icon'},

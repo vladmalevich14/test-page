@@ -2,7 +2,7 @@
     position: relative;
     height: 850px;
     width: 100%;
-    background-image: url('/assets/images/background-image.png');
+    background-image: url("assets/images/background-image.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
