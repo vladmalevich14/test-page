@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import "css/reset.css";
+@import "/content/header/header.css";
+@import "/content/header/burger.css";
+@import "/content/description/description.css";
+@import "/content/order/order.css";
+@import "/content/order/_select/select.css";
+@import "/content/order/_range/range.css";
+@import "/content/order/_input-file/input-file.css";
+@import "/content/footer/footer.css";
+@import "/content/slider/slider.css";
 
 :root {
   --color-primary: #FFFFFF;
