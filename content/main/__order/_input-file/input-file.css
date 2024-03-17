@@ -1,0 +1,73 @@
+.order__file {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.order__inputFile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    height: 48px;
+    width: 370px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: var(--color-input-file);
+}
+
+.order__fileName {
+    display: inline-block;
+    margin-top: 10px;
+    height: 16px;
+    color: var(--color-primary);
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0;
+}
+
+.order__file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.order__inputFile:hover {
+    background-color: var(--color-secondary);
+}
+
+.order__inputFile:active {
+    background-color: var(--color-input-file-active);
+}
+
+.order__file input[type=file]:disabled + .order__inputFile {
+    background-color: #eee;
+}
+
+@media screen and (max-width: 400px) {
+    .order__inputFile, .order__dropdown {
+        width: 300px;
+    }
+}

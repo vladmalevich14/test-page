@@ -1,0 +1,90 @@
+.feedback {
+    width: 100%;
+    min-height: 500px;
+    background-image: url("/assets/images/office-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slider__title {
+    margin-top: 30px;
+    font-family: Lato, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 43px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+.slider__title span {
+    color: var(--color-secondary);
+}
+
+.slider {
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slider__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+
+}
+
+.slider__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.slider__item p:nth-child(2) {
+    font-weight: 900;
+    color: var(--color-secondary);
+}
+
+.slider__container img {
+    width: 100px;
+    height: 100px;
+}
+
+.slider__prevButton,
+.slider__nextButton {
+    position: absolute;
+    top: 250px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 24px;
+    color: var(--color-primary);
+    background-color: var(--color-footer);
+    border-radius: 50px;
+}
+
+.slider__prevButton:hover,
+.slider__nextButton:hover {
+    background-color: var(--color-secondary);
+    cursor: pointer;
+}
+
+.slider__prevButton {
+    left: 150px;
+}
+
+.slider__nextButton {
+    right: 150px;
+}

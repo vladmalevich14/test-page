@@ -1,0 +1,40 @@
+<div class="order__content">
+    <h1 class="order__title">Оформление <span class="order__titleColor">Заказа</span></h1>
+    <p class="order__text">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+    <div class="order__description" id="orderSteps">
+    </div>
+    <form action="https://getform.io/f/390da523-9612-4f95-a1dd-fb42ab97a73c" method="post"
+          enctype="multipart/form-data" target="_blank" class="order__form" id="form">
+        <div class="order__inputsContainer">
+            <div class="order__dropdown">
+                <input class="order__select" type="text" placeholder="Выберите тип системы" readonly>
+                <div class="order__options" id="select">
+                </div>
+            </div>
+            <div class="order__inputWrapper">
+                <input type="email" class="order__input" name="email" placeholder="Ваш e-mail">
+                <div id="emailError" class="order__inputError"></div>
+            </div>
+            <input type="text" class="order__input" name="name" placeholder="Ваше имя">
+        </div>
+        <div class="order__rangeFileContainer">
+            <label for="range" class="order__label">
+                <div class="order__labelContainer">
+                    <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                    <span class="order__rangeValue">50%</span>
+                </div>
+
+                <input type="range" name="range" id="range" class="order__range" min="0" max="100">
+            </label>
+            <label class="order__file">
+                <input type="file" name="file">
+                <span class="order__inputFile">
+                            <img src="/assets/icons/svg/file.svg" alt="file">
+                            Прикрепить файл
+                        </span>
+                <span class="order__fileName"></span>
+            </label>
+        </div>
+        <button type="button" class="order__submit">Отправить</button>
+    </form>
+</div>

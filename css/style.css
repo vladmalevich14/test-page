@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --color-primary: #FFFFFF;
+  --color-secondary: #43ABF0;
+  --color-active: #286690;
+  --color-footer: #C3C3C3;
+  --color-header: #10101DE5;
+  --color-background: #0d1217;
+  --color-button: #84df9e;
+  --color-border: #6F6D7B;
+  --color-btn-font: #2A2B30;
+  --color-input-file: #272733;
+  --color-order-font: #C4C4C4;
+  --color-range-circle-background: #46a9eb;
+  --color-range-circle-border: #276792;
+  --color-circle-border: #286690;
+  --color-circle-background: #3E9CDC;
+  --color-select: #d6d6d6;
+  --color-select-border: #969696;
+  --color-select-option: #272733E5;
+  --color-range-background: #dbdada;
+  --color-disabled: #eee;
+  --color-black: #000000;
+  --color-input-file-active: rgba(0, 123, 255, .25);
+  --color-drop-down-background: rgba(39, 39, 51, 1);
+  --color-drop-down-border: rgba(61, 64, 80, 1);
+  --color-error: red;
+}
+
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--color-primary);
+}

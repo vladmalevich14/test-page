@@ -1,0 +1,102 @@
+#nav__toggle {
+    opacity: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .container_nav {
+        display: block;
+    }
+
+    .nav__button {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        width: 35px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    .nav__button > span,
+    .nav__button > span::before,
+    .nav__button > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--color-primary);
+    }
+
+    .nav__button > span::before {
+        content: "";
+        top: -10px;
+    }
+    .nav__button > span::after {
+        content: "";
+        top: 10px;
+    }
+
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
+        position: absolute;
+        visibility: hidden;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: var(--color-primary);
+        z-index: 2;
+    }
+
+    .nav__items {
+        display: block;
+        padding: 12px 24px;
+        color: var(--color-background);
+        font-size: 25px;
+        margin-left: 0;
+    }
+    .nav__items:hover {
+        color: var(--color-secondary);
+        text-decoration: none;
+    }
+
+    #nav__toggle:checked ~ .nav__button > span {
+        transform: rotate(45deg);
+        background-color: var(--color-background);
+    }
+    #nav__toggle:checked ~ .nav__button > span::before {
+        top: 0;
+        transform: rotate(0);
+        background-color: var(--color-background);
+    }
+    #nav__toggle:checked ~ .nav__button > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        background-color: var(--color-background);
+    }
+    #nav__toggle:checked ~ .nav__links {
+        visibility: visible;
+        right: 0;
+    }
+
+    .nav__button > span,
+    .nav__button > span::before,
+    .nav__button > span::after {
+        transition-duration: 0.25s;
+    }
+    .nav__links {
+        transition-duration: 0.25s;
+    }
+    .nav__items {
+        transition-duration: 0.25s;
+    }
+}
