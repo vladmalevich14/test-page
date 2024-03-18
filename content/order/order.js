@@ -12,17 +12,17 @@ fetch('content/order/order.html')
 
 function order() {
     let dataSteps = [
-        {img: 'assets/icons/svg/loop.svg', title: 'Lorem ipsum dolorsit amet', alt: 'loop icon'},
-        {img: 'assets/icons/svg/percent.svg', title: 'Сonsecte turadipiscing elit', alt: 'percent icon'},
-        {img: 'assets/icons/svg/doc.svg', title: 'Sed do eiusmod tempor', alt: 'document icon'},
-        {img: 'assets/icons/svg/mail-white.svg', title: 'Esse cillum doloreeu fugiat', alt: 'mail icon'},
-        {img: 'assets/icons/svg/money.svg', title: 'Excepteur sint occaecat cupidatat non proident', alt: 'money icon'},
+        {img: 'assets/svg/loop.svg', title: 'Lorem ipsum dolorsit amet', alt: 'loop icon'},
+        {img: 'assets/svg/percent.svg', title: 'Сonsecte turadipiscing elit', alt: 'percent icon'},
+        {img: 'assets/svg/doc.svg', title: 'Sed do eiusmod tempor', alt: 'document icon'},
+        {img: 'assets/svg/mail-white.svg', title: 'Esse cillum doloreeu fugiat', alt: 'mail icon'},
+        {img: 'assets/svg/money.svg', title: 'Excepteur sint occaecat cupidatat non proident', alt: 'money icon'},
     ];
 
     const getSeparatorsCircles = (count) => {
         let separatorsCircles = '';
         for (let i = 0; i < count; i++) {
-            separatorsCircles += '<img src="/assets/icons/svg/circle.svg" class="order__circleIcon">';
+            separatorsCircles += '<img src="/assets/svg/circle.svg" class="order__circleIcon">';
         }
         return separatorsCircles;
     };

@@ -21,7 +21,7 @@
 }
 
 .order__dropdown::before {
-    content: url("/assets/icons/svg/arrow-down.svg");
+    content: url("/assets/svg/arrow-down.svg");
     position: absolute;
     top: 10px;
     right: 20px;
@@ -32,7 +32,7 @@
 }
 
 .order__dropdown.active::before {
-    content: url("/assets/icons/svg/arrow-up.svg");
+    content: url("/assets/svg/arrow-up.svg");
     top: 10px;
 }
 
